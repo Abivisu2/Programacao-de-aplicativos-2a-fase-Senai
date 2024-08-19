@@ -1,0 +1,16 @@
+/* .tituloUm{
+  color: red;
+  
+}
+
+.conteudo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aquamarine;
+} */
+
+*{
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aquamarine;
+  margin: 0;
+}

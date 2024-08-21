@@ -1,0 +1,16 @@
+.imagens-body{
+
+    width: 400px;
+    height: 300px;
+    
+
+}
+
+.body-container{
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+.container-Header{
+
+    display: flex;
+    background-color: var(--cor-2);
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    
+}
+
+.pesquisa{
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-6)
+
+}

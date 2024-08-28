@@ -1,0 +1,15 @@
+.imagens-container{
+
+    width: 300px;
+    height: 300px;
+    margin: 0;
+
+}
+
+.body-container{
+
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+   
+}

@@ -1,6 +1,108 @@
+
+
+.marca-placa{
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 0 2rem;
+    /* max-width: 1200px; */
+    /* margin-top: 0 auto; */
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    padding-top: 2rem;
+}
+.title-um{
+    /* justify-content: center;
+    padding: 0 2rem; */
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 24px;
+    max-width: 500px;
+    margin-bottom: 38px;
+}
+
+.elementos{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    /* max-width: 1200px; */
+    /* margin-top: 0 auto; */
+}
+
+
 .secaoUm-LogoMaior{
 
-    height: 50px;
-    width: 50px;
-    /* padding-left: 40px; */
+    height: 300px;
+    width: 300px;
+    padding-top: 40px;
+}
+
+.placa-publicidade{
+    height: 300px;
+    width: 300px;
+    padding-top: 40px;
+}
+
+/* Section produtos */
+
+.produtos{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding: 0 2rem;
+    padding-top: 6rem;
+    background-color: var(--cor-6) ;
+}
+
+.title-produtos{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    align-content: center;
+}
+
+.title-promocao{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 24px; 
+    margin-bottom: 38px;
+
+}
+
+.camisetas{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    align-content: center;
+}
+
+.cartoes{
+    margin-top: 6rem;
+    padding: 0 2rem;
+    align-content: center;
+    margin-bottom: 2rem; 
+    
+}
+
+.cartoes-promo{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 24px; 
+    margin-bottom: 38px; 
+    
+}
+
+.cartao-img{
+    padding-left: 200px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
 }

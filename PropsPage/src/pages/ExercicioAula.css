@@ -1,0 +1,90 @@
+Body{
+  background-color: #fff;
+}
+
+.div-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-top: 4rem; */
+  width: 100%;
+  gap: 10px;
+}
+
+.btnExercicioUm{
+  background-color: #2b39ff;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  color: #FFF ;
+  border: none;
+  margin-top: 40px;
+}
+
+.btnExercicioUm:hover{
+  background-color: #2bff95;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  color: #000 ;
+  border: none;
+  margin-top: 40px;
+}
+
+
+/* Estilização da div useState: Valor total*/
+
+.valorTotal{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #238855;
+  border-radius: 10px;
+  width: 60px;
+  height: 40px;
+  font-weight: 700;
+  color: #000 ;
+  border: none;
+  
+}
+
+/* Estilização segundo exercício */
+
+.btnExercicioDois{
+  background-color: #2b39ff;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  color: #FFF ;
+  border: none;
+  margin-top: 40px;
+}
+
+.btnExercicioDois:hover{
+  background-color: #2bff95;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  color: #000 ;
+  border: none;
+  margin-top: 40px;
+}
+
+.mediaPonderada{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #238855;
+  border-radius: 10px;
+  width: 60px;
+  height: 40px;
+  font-weight: 700;
+  color: #000 ;
+  border: none;
+}

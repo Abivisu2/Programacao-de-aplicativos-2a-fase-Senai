@@ -39,11 +39,10 @@ function ExercicioAula() {
 
         if(totalMoedas >= precoDoProduto){
           setResultado(`O total de moedas ${totalMoedas}, é o suficiente para comprar o produto!`)
-          //alert(`O total de moedas ${totalMoedas}, é o suficiente para comprar o produto!`)
+          
 
         }else{
           setResultado(`O total de moedas ${totalMoedas}, Não é suficiente para comprar o produto!`)
-          //alert(`O total de moedas ${totalMoedas}, Não é suficiente para comprar o produto!`)
         }
 
     }
@@ -54,14 +53,17 @@ function ExercicioAula() {
 
       let notaUm = Number(prompt("Digite a primeira nota, com valores entre 0 a 10:"))
       let pesoNotaUm = Number(prompt("Qual é o peso da primeira nota?"))
+
       let notaDois = Number(prompt("Digite a segunda nota, com valores entre 0 a 10:"))
       let pesoNotaDois = Number(prompt("Qual é o peso da segunda nota?"))
+
       let notaTres = Number(prompt("Digite a terceira nota, com valores entre 0 a 10:"))
       let pesoNotaTres = Number(prompt("Qual é o peso da terceira nota?"))
+
       let notaQuatro = Number(prompt("Digite a quarta nota, com valores entre 0 a 10:"))
       let pesoNotaQuatro = Number(prompt("Qual é o peso da quarta nota?"))
 
-      if(notaUm < 0 || notaUm > 10 || notaDois < 0 || notaDois > 10 || notaTres < 0 || notaTres > 10 || notaQuatro < 0 || notaQuatro > 0){
+      if(notaUm < 0 || notaUm > 10 || notaDois < 0 || notaDois > 10 || notaTres < 0 || notaTres > 10 || notaQuatro < 0 || notaQuatro > 10){
 
         setMedia("Notas digitadas estão fora do permitido, tente novamente!")
 
@@ -76,13 +78,13 @@ function ExercicioAula() {
   
         let somaDosPesos = pesoNotaUm + pesoNotaDois + pesoNotaTres + pesoNotaQuatro
   
-        let mediaPonderada = Number(somaDasMultiplicacoes / somaDosPesos).toFixed(2)
+        let mediaPonderada = (somaDasMultiplicacoes / somaDosPesos)
   
         if(mediaPonderada >= 7){
   
-          setMedia(`Aluno aprovado, a sua média é de: ${mediaPonderada}.`)
+          setMedia(`Aluno aprovado, a sua média é de: ${mediaPonderada.toFixed(2)}.`)
         }else{
-          setMedia(`Aluno Reprovado, a sua média é de: ${mediaPonderada}.`)
+          setMedia(`Aluno Reprovado, a sua média é de: ${mediaPonderada.toFixed(2)}.`)
         }
         
       }
@@ -97,8 +99,12 @@ function ExercicioAula() {
 
         <Titulo texto={"Exercícios"} emoji={"💡"}/>
 
+        <div className="buttons">
+
         <button className='btnExercicioUm' onClick={rodar525}>Exercício 5.25</button>
         <button className='btnExercicioDois' onClick={rodar526}>Exercício 5.26</button>
+          
+        </div>
 
         <div className="valorTotal">
           {resultado}

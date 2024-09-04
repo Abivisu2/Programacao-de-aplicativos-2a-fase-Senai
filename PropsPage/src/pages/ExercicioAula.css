@@ -42,14 +42,24 @@ Body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #238855;
+  background-color: #ffffe5;
   border-radius: 10px;
-  width: 60px;
+  width: 400px;
   height: 40px;
   font-weight: 700;
   color: #000 ;
   border: none;
   
+}
+
+/* Divs botões */
+
+.buttons{
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 /* Estilização segundo exercício */
@@ -80,9 +90,9 @@ Body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #238855;
+  background-color: #ffffe5;
   border-radius: 10px;
-  width: 60px;
+  width: 400px;
   height: 40px;
   font-weight: 700;
   color: #000 ;

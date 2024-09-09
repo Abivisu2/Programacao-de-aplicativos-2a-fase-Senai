@@ -1,0 +1,10 @@
+.titulo-container{
+  color: #00ff00;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}

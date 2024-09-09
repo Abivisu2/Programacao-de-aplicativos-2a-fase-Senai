@@ -1,0 +1,23 @@
+body{
+  background-color: aliceblue;
+}
+.div-Container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  
+}
+
+.btnConsultarNumero{
+  background-color: #2b39ff;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  font-weight: 700;
+  color: #FFF ;
+  border: none;
+  margin-top: 40px;
+}

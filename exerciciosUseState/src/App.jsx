@@ -1,5 +1,6 @@
 import './App.css'
 import ComparadorDeNumero from './pages/ComparadorDeNumero'
+import ConversaoTemperaturaInput from './pages/ConversaoTemperaturaInput'
 import CreditosFuncionarios from './pages/CreditosFuncionarios'
 import Democracia from './pages/Democracia'
 import LigarArCondicionado from './pages/LigarArCondicionado'
@@ -10,7 +11,8 @@ function App() {
   return (
     <div>
       
-     <LigarArCondicionado/>
+     {/* <LigarArCondicionado/> */}
+     <ConversaoTemperaturaInput/>
      {/* <Democracia/> */}
      {/* <ComparadorDeNumero/> */}
      {/* <NumeroParEpositivo/> */}

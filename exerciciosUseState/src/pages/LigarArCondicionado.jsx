@@ -5,15 +5,15 @@ import { useState } from "react";
 function LigarArCondicionado() {
   let temperaturaDigitada;
   let temperaturaConvertida;
-  //5.27 - Ligar o ar condicionado: Faça um programa onde o usuário irá escolher se quer converter graus Celsius para Fahrenheit ou Fahrenheit para Celsius. Após a ecolha, faça uma leitura e converta para a unidade escolhida.
 
-  // const [opcaoselecionada, setOpcaoSelecionda] = useState("");
+  //5.27 - Ligar o ar condicionado: Faça um programa onde o usuário irá escolher se quer converter graus Celsius para Fahrenheit ou Fahrenheit para Celsius. Após a ecolha, faça uma leitura e converta para a unidade escolhida.
+  
   const [valorDigitado, setValorDigitado] = useState("");
   const [ResultadoDaConversao, setResultadoDaConversao] = useState("");
 
   function btnCeslsius() {
     temperaturaDigitada = Number(
-      prompt("Digite o valor da temperatura em Fahrenheit : ")
+      prompt("Digite o valor da temperatura em Celcius: ")
     );
 
     temperaturaConvertida = temperaturaDigitada * 1.8 + 32;
@@ -25,13 +25,13 @@ function LigarArCondicionado() {
 
   function btnFahreheit() {
     temperaturaDigitada = Number(
-      prompt("Digite o valor da temperatura em Celcius : ")
+      prompt("Digite o valor da temperatura em Fahrenheit: ")
     );
 
     temperaturaConvertida = (temperaturaDigitada - 32) / 1.8;
     setValorDigitado(`${temperaturaDigitada}`);
     setResultadoDaConversao(
-      `O valor digitado convertido em Celsius é: ${temperaturaConvertida.toFixed(2)}`
+      `O valor digitado convertido em Celsius é: ${temperaturaConvertida.toFixed(0)}`
     );
   }
 

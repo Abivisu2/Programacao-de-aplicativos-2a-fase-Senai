@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './ExercicioManoJuca.css'
+import Titulo from '../components/Titulo'
 
 function ExercicioManoJuca() {
 
@@ -13,6 +14,7 @@ function ExercicioManoJuca() {
     const [numeroDeDias, setNumeroDedias ] = useState ()
     const [valorFinal, setValorFinal] = useState ()
     const [composicaoConta, setComposicaoConta] = useState ()
+    // const [informacoes, setInformacoes] = useState ()
 
     function atualizarNumero(event) {
 
@@ -22,12 +24,14 @@ function ExercicioManoJuca() {
 
     function calcularValor() {
 
-      if (isNaN (numeroDeDias) || numeroDeDias === "" ) {
-          setValorFinal(`Digite um numero que corresponde a dias, caractere inválido!`)
-          return
-      }
-
       diasDigitado = Number(numeroDeDias)
+
+      if (isNaN(diasDigitado) || diasDigitado === "" ) {
+          setValorFinal(`Digite um numero que corresponde a dias, caractere inválido!`)
+          setComposicaoConta(null)
+          return;
+      }else{
+
 
       if (diasDigitado <= 5 ) {
 
@@ -46,6 +50,7 @@ function ExercicioManoJuca() {
       descontoTotal = ( totalValores * descontoAmor) / 100 + (totalValores * descontoCarteirinha) / 100
 
       pagamentoFinal = totalValores - descontoTotal + danosMaterias
+      
       setValorFinal(pagamentoFinal.toFixed(2))
 
       setComposicaoConta({
@@ -56,19 +61,26 @@ function ExercicioManoJuca() {
          valorFinal: pagamentoFinal.toFixed(2),
         });
         
+      }
     }
 
   return (
-    <div>
+    <div className='container-pagina'>
+
+      <Titulo texto={"Programa para calular estadia em um albergue"} emoji={"🏠"}/>
+
+      <div className="informacoes">
+        <p> Valor da diária até 5 dias: $R100 / <mark>Valor da diária de 6 até 10 diárias: $R90</mark> / Valor da diária a partir de 11 diárias: $R80</p>
+      </div>
 
     <div className="div-subititle">
-      <h2>Calcular o valor da estádia do MANU JUCA!</h2>
+      <h2>Quantos dias tu vai ficar no albergue MANU JUCA?</h2>
     </div>
 
-        <input type="text"
+        <input className='inptDigitado' type="text"
         
         value={numeroDeDias}
-        placeholder='Digite um número'
+        placeholder='Digite a quantidade de dias'
         onChange={atualizarNumero}
         />
 
@@ -80,11 +92,11 @@ function ExercicioManoJuca() {
           <div className="resultado">
 
           <h3>Detalhes da Conta:</h3>
-          <p>Total sem desconto: R${composicaoConta.totalSemDesconto}</p>
-          <p>Desconto por ter envolvimento emocional de (10%): -R${composicaoConta.descontoAmor}</p>
-          <p>Desconto por possuir carteirinha de motorista (15%): -R${composicaoConta.descontoCarteirinha}</p>
-          <p>Multa por danos materiais: +R${composicaoConta.danosMateriais}</p>
-          <h4>Valor final: R${composicaoConta.valorFinal}</h4>
+          <p>Total sem desconto: <strong>R${composicaoConta.totalSemDesconto}</strong></p>
+          <p>Desconto por ter envolvimento emocional de (10%): <strong>-R${composicaoConta.descontoAmor}</strong></p>
+          <p>Desconto por possuir carteirinha de motorista (15%): <strong>-R${composicaoConta.descontoCarteirinha}</strong></p>
+          <p>Multa por danos materiais: <strong>+R${composicaoConta.danosMateriais}</strong></p>
+          <h4>Valor final: <strong>R${composicaoConta.valorFinal}</strong></h4>
 
           </div>
 

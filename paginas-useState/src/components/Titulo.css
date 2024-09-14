@@ -1,0 +1,13 @@
+.container-titulo{
+
+  
+    color: #fff;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

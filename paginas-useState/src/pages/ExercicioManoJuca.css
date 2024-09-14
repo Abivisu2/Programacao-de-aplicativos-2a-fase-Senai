@@ -1,0 +1,83 @@
+body{
+  background-color: #fac5ff;
+ 
+}
+
+.container-pagina{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+.informacoes{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin-top: 2rem;
+  /* gap: 1rem; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.div-subititle{
+  font-weight: 700;
+  font-size: 15px;
+  justify-content: center;
+  color: #0739df;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 1rem;
+
+}
+
+.inptDigitado{
+  width: 200px;
+  height: 30px;
+  padding-left: 40px;
+  border-radius: 10px;
+  border: solid #0739df;
+  font-weight: 700;
+  color: #000;
+  
+}
+
+.btnCalcular-Valor{
+  background-color: #2b39ff;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  color: #000 ;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+
+.btnCalcular-Valor:hover{
+  background-color: #14aedd;
+  border-radius: 10px;
+  width: 155px;
+  height: 45px;
+  font-weight: 700;
+  color: #000 ;
+  border: none;
+  margin-top: 20px;
+}
+
+.resultado{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+

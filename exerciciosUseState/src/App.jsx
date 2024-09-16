@@ -11,11 +11,11 @@ function App() {
   return (
     <div>
       
-     {/* <LigarArCondicionado/> */}
-     <ConversaoTemperaturaInput/>
+     <LigarArCondicionado/>
+     {/* <ConversaoTemperaturaInput/> */}
+     {/* <NumeroParEpositivo/> */}
      {/* <Democracia/> */}
      {/* <ComparadorDeNumero/> */}
-     {/* <NumeroParEpositivo/> */}
      {/* <CreditosFuncionarios/> */}
 
     </div>

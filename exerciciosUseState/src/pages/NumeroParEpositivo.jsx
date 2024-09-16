@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './NumeroParEpositivo.css'
+import Titulo from '../components/Titulo'
 
 //5.30 - Dois copos meio cheios: Faça um programa para ler um número e imprimir uma mensagem dizendo se o mesmo é par e positivo ao mesmo tempo.
 
@@ -42,7 +43,8 @@ function NumeroParEpositivo() {
   return (
     <div className='div-Container'>
 
-      <h1>Programa para saber se o número é par e positivo</h1>
+      <Titulo texto={"Programa que determina se o número é par e positivo!"} emoji={"⏳"}/>
+      <h1>Aperta o botão para tentar 😃</h1>
 
       <div className="divBtn">
         <button className="btnConsultar" onClick={consultarNumero}>Consultar número</button>

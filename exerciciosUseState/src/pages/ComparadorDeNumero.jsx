@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './ComparadorDeNumero.css'
+import Titulo from '../components/Titulo'
 
 let numeroDigitado
 
@@ -34,7 +35,12 @@ function ComparadorDeNumero() {
 
   return (
     <div className='div-Container'>
-      <h1>Comparador de números</h1>
+
+      
+        <Titulo texto={"Programa que determina se um número é negativo, positivo ou nulo"} emoji={"2️⃣1️⃣0️⃣"}/>
+     
+
+      <h1>Acionar o botão abaixo ⬇⬇</h1>
 
       <div className="divBtnComparar">
       <button className='btnConsultarNumero' onClick={ConsultarNumero}>Consultar número</button>

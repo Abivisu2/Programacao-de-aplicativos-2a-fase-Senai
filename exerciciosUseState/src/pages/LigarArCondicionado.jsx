@@ -19,7 +19,7 @@ function LigarArCondicionado() {
     temperaturaConvertida = temperaturaDigitada * 1.8 + 32;
     setValorDigitado(`${temperaturaDigitada}`);
     setResultadoDaConversao(
-      `O valor digitado convertido em Fahrenheit é: ${temperaturaConvertida.toFixed(2)}`
+      `O valor digitado convertido em Fahrenheit é: ${temperaturaConvertida.toFixed(0)} F`
     );
   }
 
@@ -31,7 +31,7 @@ function LigarArCondicionado() {
     temperaturaConvertida = (temperaturaDigitada - 32) / 1.8;
     setValorDigitado(`${temperaturaDigitada}`);
     setResultadoDaConversao(
-      `O valor digitado convertido em Celsius é: ${temperaturaConvertida.toFixed(0)}`
+      `O valor digitado convertido em Celsius é: ${temperaturaConvertida.toFixed(0)} ℃`
     );
   }
 

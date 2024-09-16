@@ -16,7 +16,7 @@ function ConversaoTemperaturaInput() {
     let temperaturaConvertida = (inputCelsius) * 1.8 + 32;
     setinputCelsius(`${inputCelsius}`);
     setResultadoFinal(
-      `O valor digitado, ${inputCelsius} Celsius, convertidos em Fahrenheit é: ${temperaturaConvertida.toFixed(0)} F`
+      `O valor digitado, ${inputCelsius} ℃, convertidos em Fahrenheit é: ${temperaturaConvertida.toFixed(0)} F`
     );
     
   }

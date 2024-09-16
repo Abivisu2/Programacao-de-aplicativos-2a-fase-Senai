@@ -13,7 +13,7 @@ function ExercicioManoJuca() {
 
     const [numeroDeDias, setNumeroDedias ] = useState ()
     const [valorFinal, setValorFinal] = useState ()
-    const [composicaoConta, setComposicaoConta] = useState ()
+    const [composicaoConta, setComposicaoConta] = useState (null)
     // const [informacoes, setInformacoes] = useState ()
 
     function atualizarNumero(event) {
@@ -25,11 +25,11 @@ function ExercicioManoJuca() {
     function calcularValor() {
 
       diasDigitado = Number(numeroDeDias)
-
+      
       if (isNaN(diasDigitado) || diasDigitado === "" ) {
-          setValorFinal(`Digite um numero que corresponde a dias, caractere inválido!`)
-          setComposicaoConta(null)
-          return;
+        setValorFinal(`Digite um numero que corresponde a dias, caractere inválido!`)
+        setComposicaoConta(null)
+        return;
       }else{
 
 

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './CreditosFuncionarios.css'
+import Titulo from '../components/Titulo'
 
 //5.31 - Não tem garçom de cara feia: Uma empresa abriu uma linha de crédito para os funcionários. O valor da prestação não pode ultrapassar 30% do salário. Faça um programa que receba o salário, o valor do empréstimo e o número de prestações e informe se o empréstimo pode ser concedido. Nenhum dos valores informados pode ser zero ou negativo
 
@@ -44,6 +45,7 @@ function CreditosFuncionarios() {
 
     <div className='div-Container'>
 
+      <Titulo texto={"Programa verificador de créditos, com limite de prestação de 30% do sálario"}/>
       <h1>Verificador de Crédito para Funcionários</h1>
 
       <div className="div-btn"></div>

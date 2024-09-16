@@ -1,0 +1,24 @@
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+
+}
+
+.forms-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.container-pagina{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

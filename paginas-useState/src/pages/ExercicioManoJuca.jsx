@@ -26,9 +26,9 @@ function ExercicioManoJuca() {
 
       diasDigitado = Number(numeroDeDias)
       
-      if (isNaN(diasDigitado) || diasDigitado === "" ) {
+      if (isNaN(diasDigitado)) {
         setValorFinal(`Digite um numero que corresponde a dias, caractere inválido!`)
-        setComposicaoConta(null)
+        setComposicaoConta("")
         return;
       }else{
 

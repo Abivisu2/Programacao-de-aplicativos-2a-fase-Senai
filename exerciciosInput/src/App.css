@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .btn527{
@@ -60,4 +60,16 @@
   background-color: aqua;
   width: 100px;
   border: none;
+}
+
+.btn523{
+  background-color: aqua;
+  width: 100px;
+  border: none;
+}
+
+.btn524{
+  background-color: aqua;
+  width: 100px;
+  border: none; 
 }

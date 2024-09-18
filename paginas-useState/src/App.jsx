@@ -27,7 +27,7 @@ function App() {
 
     </nav>
 
-     {pagina} */}
+      {pagina} */}
 
       {/* <nav className='nav-btns'>
 

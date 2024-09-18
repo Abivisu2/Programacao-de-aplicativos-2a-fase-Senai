@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import Arcondicionado from './pages/Arcondicionado'
 import PorquinhoInput from './PorquinhoInput'
 import './App.css'
+import Comerciante from './pages/Comerciante'
+import NotasAluno from './pages/NotasAluno'
 
 function App() {
 
@@ -14,9 +16,10 @@ function App() {
 
       <button className='btn527' onClick={() => setPagina(<Arcondicionado/>)}>5.27</button>
       <button className='btn525' onClick={() => setPagina(<PorquinhoInput/>)}>5.25</button>
+      <button className='btn523' onClick={() => setPagina(<Comerciante/>)}>5.23</button>
+      <button className='btn524' onClick={() => setPagina(<NotasAluno/>)}>5.24</button>
     
     </nav>
-      {/* <Arcondicionado/> */}
 
       {pagina}
       

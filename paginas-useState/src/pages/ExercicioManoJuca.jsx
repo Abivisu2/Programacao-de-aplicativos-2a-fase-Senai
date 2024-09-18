@@ -14,7 +14,8 @@ function ExercicioManoJuca() {
     const [numeroDeDias, setNumeroDedias ] = useState ()
     const [valorFinal, setValorFinal] = useState ()
     const [composicaoConta, setComposicaoConta] = useState (null)
-    // const [informacoes, setInformacoes] = useState ()
+    const [informacoesValidas, setinformacoesValidas] = useState (false)
+    const [mensagemErro, setMensagemErro] = useState ()
 
     function atualizarNumero(event) {
 
@@ -27,11 +28,13 @@ function ExercicioManoJuca() {
       diasDigitado = Number(numeroDeDias)
       
       if (isNaN(diasDigitado)) {
-        setValorFinal(`Digite um numero que corresponde a dias, caractere inválido!`)
-        setComposicaoConta("")
+        setinformacoesValidas(false)
+        setMensagemErro("Digite um numero que corresponde a dias, caractere inválido!")
         return;
+
       }else{
 
+      setinformacoesValidas(true)
 
       if (diasDigitado <= 5 ) {
 
@@ -87,10 +90,10 @@ function ExercicioManoJuca() {
         <button className="btnCalcular-Valor" onClick={calcularValor}>Calcular valor</button>
 
         
-        {valorFinal && ( 
+        {informacoesValidas ? ( 
 
           <div className="resultado">
-
+           
           <h3>Detalhes da Conta:</h3>
           <p>Total sem desconto: <strong>R${composicaoConta.totalSemDesconto}</strong></p>
           <p>Desconto por ter envolvimento emocional de (10%): <strong>-R${composicaoConta.descontoAmor}</strong></p>
@@ -100,7 +103,8 @@ function ExercicioManoJuca() {
 
           </div>
 
-        )}
+        ) : <p>{mensagemErro}</p>
+        }
         
 
       

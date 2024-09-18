@@ -86,7 +86,7 @@ function calcularMedia() {
     
 <div className="resultados">
   
-      <button className='btn524' onClick={calcularMedia}>Calcular média</button>
+      <button className='btn524page' onClick={calcularMedia}>Calcular média</button>
   
       {relatorio && (
   

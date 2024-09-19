@@ -7,14 +7,19 @@ function PesquisaHabitantes() {
     const [genero, setGenero] = useState()
     const [listaDados, setListaDados] = useState([])
 
-function conferirdados() {
-    
-let alturaDigitada = Number(altura)
-let generoDigitado = Number(genero)
 let maiorAltura = 0
 let menorAltura = 0
 let masculino = 0 
 let feminino = 1
+let mediaAlturasMulheres = 0
+let mediaAlturasPopulacao = 0
+let percentualHomens = 0
+
+function adicionarDados() {
+    
+let alturaDigitada = Number(altura)
+let generoDigitado = Number(genero)
+
 
 maiorAltura = alturaDigitada
 menorAltura = alturaDigitada
@@ -53,7 +58,7 @@ if (maiorAltura > altura) {
     
         </div>
 
-        <button className='btn710Page' onClick={conferirdados}>Conferir dados</button>
+        <button className='btn710Page' onClick={adicionarDados}>Adicionar dados</button>
 
         {listaDados}
 

@@ -38,7 +38,7 @@ function Arcondicionado() {
                     onChange={mudarCelsius}
                 />
             </div>
-
+                <p>b</p>
             <div className="input-container">
                 <label htmlFor="inputFah">Fahrenheit</label>
                     <input type="number"

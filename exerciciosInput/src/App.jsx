@@ -6,6 +6,7 @@ import './App.css'
 import Comerciante from './pages/Comerciante'
 import NotasAluno from './pages/NotasAluno'
 import PesquisaHabitantes from './pages/PesquisaHabitantes'
+import Crescimento from './pages/Crescimento'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <button className='btn523' onClick={() => setPagina(<Comerciante/>)}>5.23</button>
       <button className='btn524' onClick={() => setPagina(<NotasAluno/>)}>5.24</button>
       <button className='btn710' onClick={() => setPagina(<PesquisaHabitantes/>)}>7.10</button>
+      <button className='btn711' onClick={() => setPagina(<Crescimento/>)}>7.11</button>
     
     </nav>
 

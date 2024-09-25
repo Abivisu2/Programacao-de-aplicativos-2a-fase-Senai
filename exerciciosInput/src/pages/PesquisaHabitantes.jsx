@@ -1,38 +1,48 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './PesquisaHabitantes.css'
 
 function PesquisaHabitantes() {
 
-    const [altura, setAltura] = useState()
-    const [genero, setGenero] = useState()
-    const [listaDados, setListaDados] = useState([])
-
-let maiorAltura = 0
-let menorAltura = 0
+  
+  
+  const [altura, setAltura] = useState('')
+  const [genero, setGenero] = useState('')
+  const [listaDados, setListaDados] = useState([])
+  const [relatorio, setRelatorio] = useState("")
+  
+  useEffect( () => {
+    console.log(listaDados);
+  } ,[listaDados])
+  
+  let maiorAltura = 0
+  let menorAltura = 0
 let masculino = 0 
 let feminino = 1
 let somaAlturasMulheres = 0
+let somaAlturasPopulacao = 0
 let totalMulheres = 0
 let totalHomens = 0
-let somaAlturasPopulacao = 0
-let percentualHomens = 0
+let percentualHomens 
+let mediaAlturasMulher
+let mediaAlturaPopulacao
 
-  
+
 
 function adicionarDados() {
 
-    
 let alturaDigitada = Number(altura)
 let generoDigitado = Number(genero)
 
-if(listaDados.length < 10){
-  setListaDados([...listaDados, {altura: alturaDigitada, genero: generoDigitado}])
+
+if(listaDados.length < 4){
+  setListaDados([...listaDados , {altura: alturaDigitada , genero: generoDigitado}])
 
   setAltura('')
   setGenero('')
 
 }else{
   alert("Já foram adicionados os 10 habitantes!")
+  calcularDados()
 }
 
 }
@@ -50,22 +60,27 @@ function calcularDados() {
       menorAltura = listaDados[i].altura
     }
 
-    somaAlturasPopulacao += listaDados.altura
+    somaAlturasPopulacao += listaDados[i].altura
 
-    if(listaDados.genero === 1){
-      somaAlturasMulheres += listaDados.altura
+    if(listaDados[i].genero === feminino){
+      somaAlturasMulheres += listaDados[i].altura
       totalMulheres++
-    }else if(listaDados.genero === 0){
+    }else if(listaDados[i].genero === masculino){
       totalHomens++
     }
-  
+  console.log(somaAlturasMulheres)
+  console.log(totalMulheres)
+
+    mediaAlturasMulher = somaAlturasMulheres / totalMulheres
+    mediaAlturaPopulacao = somaAlturasPopulacao / listaDados.length
+    percentualHomens = (totalHomens / listaDados.length ) * 100
+
+    setRelatorio("Media de mulheres: " + mediaAlturasMulher + ' Media altura Pupulação' + mediaAlturaPopulacao + ' Percentual de Homens' + percentualHomens)   
+
   }
 
 
 }
-
-
-
 
   return (
 
@@ -93,7 +108,7 @@ function calcularDados() {
         <button className='btn710Page' onClick={adicionarDados}>Adicionar dados</button>
         <button onClick={calcularDados}>calculcular dados</button>
 
-        {listaDados}
+        {relatorio}
 
     </div>
   )

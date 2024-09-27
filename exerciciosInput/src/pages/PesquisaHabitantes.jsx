@@ -14,8 +14,8 @@ function PesquisaHabitantes() {
     console.log(listaDados);
   } ,[listaDados])
   
-  let maiorAltura = 0
-  let menorAltura = 0
+let maiorAltura = 0
+let menorAltura = 0
 let masculino = 0 
 let feminino = 1
 let somaAlturasMulheres = 0
@@ -34,7 +34,7 @@ let alturaDigitada = Number(altura)
 let generoDigitado = Number(genero)
 
 
-if(listaDados.length < 4){
+if(listaDados.length < 3){
   setListaDados([...listaDados , {altura: alturaDigitada , genero: generoDigitado}])
 
   setAltura('')
@@ -52,7 +52,6 @@ function calcularDados() {
   for(let i = 0; i < listaDados.length; i++){
   
     if (listaDados[i].altura > maiorAltura) {
-  
       maiorAltura = listaDados[i].altura
      
     }
@@ -75,7 +74,7 @@ function calcularDados() {
     mediaAlturaPopulacao = somaAlturasPopulacao / listaDados.length
     percentualHomens = (totalHomens / listaDados.length ) * 100
 
-    setRelatorio("Media de mulheres: " + mediaAlturasMulher + ' Media altura Pupulação' + mediaAlturaPopulacao + ' Percentual de Homens' + percentualHomens)   
+    setRelatorio("Media de altura das mulheres: " + mediaAlturasMulher + ' Media altura Pupulação' + mediaAlturaPopulacao + ' Percentual de Homens' + percentualHomens + 'Menor altura' + menorAltura + 'maior altura' + maiorAltura)   
 
   }
 

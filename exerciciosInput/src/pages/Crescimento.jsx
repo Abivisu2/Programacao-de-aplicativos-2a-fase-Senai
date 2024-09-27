@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Crescimento.css'
 
 function Crescimento() {
 
@@ -8,25 +9,27 @@ function Crescimento() {
   const [resultado, setResultado] = useState ("")
 
 
-
-function coneferirDados() {
   
-  let cont = 0
+  function coneferirDados() {
+    
+    let cont = 0
+    let valorUm = Number(alturaUm)
+    let valorDois = Number(alturaDois)
 
-  while (alturaDois <= alturaUm) {
+ while(valorDois <= valorUm){
 
-    alturaDois = alturaDois + 2
-    alturaUm = alturaUm + 3
-    cont ++
-  }
+    valorUm += 2
+    valorDois += 3
+    cont++
+}
 
-  setResultado(cont)
+  setResultado(`Enzo será mais alto que Valentina em ${cont} anos.`)
 
 }
 
     
   return (
-    <div>
+    <div className='div-container'>
 
 
       <label htmlFor="InptAlturaUm">Altura Valentina</label>
@@ -43,7 +46,7 @@ function coneferirDados() {
       onChange={(event) => setAlturaDois(event.target.value)}
       />
       
-      <button onClick={coneferirDados}>conferir dados</button>
+      <button className='' onClick={coneferirDados}>conferir dados</button>
 
       {resultado}
 

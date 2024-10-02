@@ -1,0 +1,21 @@
+
+.div-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div-titulo{
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.titulo-pagina{
+
+  color: var(--cor-2);
+
+}
+

@@ -8,7 +8,7 @@ function App() {
 
   const [fila, setFila] = useState([])
   const [filaPreferencial, setFilaPreferencial] = useState([])
-  const [contador, setContador] = useState (1)
+  const [contador, setContador] = useState(1)
 
   
 function gerarSenha(){
@@ -63,7 +63,13 @@ function gerarSenha(){
 
   return (
 
-    <div>
+    <div className='div-container'>
+
+      <div className='div-titulo'>
+        <img src="public/images/farmarcia-logo-pq.PNG.png" alt="" />
+        <h1 className='titulo-pagina'>Farmárcia mais saúde</h1>
+        <img src="public/images/farmarcia-placa.PNG.png" alt="" />
+      </div>
 
       <button onClick={atender}>atender</button>
 

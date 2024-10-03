@@ -1,0 +1,18 @@
+
+.container-camisetas{
+  display: flex;
+  gap: 30px;
+
+}
+
+.camisetasUm{
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.camisetasDois{
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+}

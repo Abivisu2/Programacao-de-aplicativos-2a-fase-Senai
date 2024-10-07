@@ -15,7 +15,7 @@ function PesquisaHabitantes() {
   } ,[listaDados])
   
 let maiorAltura = 0
-let menorAltura = 0
+let menorAltura = 1000
 let masculino = 0 
 let feminino = 1
 let somaAlturasMulheres = 0
@@ -34,7 +34,7 @@ let alturaDigitada = Number(altura)
 let generoDigitado = Number(genero)
 
 
-if(listaDados.length < 3){
+if(listaDados.length < 2){
   setListaDados([...listaDados , {altura: alturaDigitada , genero: generoDigitado}])
 
   setAltura('')
@@ -67,8 +67,8 @@ function calcularDados() {
     }else if(listaDados[i].genero === masculino){
       totalHomens++
     }
-  console.log(somaAlturasMulheres)
-  console.log(totalMulheres)
+  // console.log(somaAlturasMulheres)
+  // console.log(totalMulheres)
 
     mediaAlturasMulher = somaAlturasMulheres / totalMulheres
     mediaAlturaPopulacao = somaAlturasPopulacao / listaDados.length

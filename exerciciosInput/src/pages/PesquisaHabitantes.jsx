@@ -67,14 +67,18 @@ function calcularDados() {
     }else if(listaDados[i].genero === masculino){
       totalHomens++
     }
-  // console.log(somaAlturasMulheres)
-  // console.log(totalMulheres)
 
     mediaAlturasMulher = somaAlturasMulheres / totalMulheres
-    mediaAlturaPopulacao = somaAlturasPopulacao / listaDados.length
+    mediaAlturaPopulacao = Number(somaAlturasPopulacao / listaDados.length).toFixed(2)
     percentualHomens = (totalHomens / listaDados.length ) * 100
 
-    setRelatorio("Media de altura das mulheres: " + mediaAlturasMulher + ' Media altura Pupulação' + mediaAlturaPopulacao + ' Percentual de Homens' + percentualHomens + 'Menor altura' + menorAltura + 'maior altura' + maiorAltura)   
+
+    setRelatorio(`Média de altura das mulheres: ${mediaAlturasMulher}
+    Media da altura da população: ${mediaAlturaPopulacao}
+    Percentual de homens na população: ${percentualHomens} %
+    Menor altura: ${menorAltura}
+    Maior altura: ${maiorAltura}
+    `)
 
   }
 
@@ -83,29 +87,36 @@ function calcularDados() {
 
   return (
 
-    <div>
+    <div className='div-container'>
 
-        <h1>7.10 - Pesquisa habitantes</h1>
+        <h1 className='title-page'>7.10 - Pesquisa habitantes</h1>
+
+      <div className="inpts">
 
         <div className="dadosDigitados">
-            <label htmlFor="inptAltura">Altura</label>
-            <input type="number" 
+            <label htmlFor="inptAltura" className='title-inpt'>Altura</label>
+            <input className='inputs' type="number" 
             id='inptAltura'
             value={altura}
             onChange={(event) => setAltura(event.target.value)}
             />
+        </div>
 
-            <label htmlFor="inptGenero">Gênero</label>
-            <input type="number" 
+        <div className="dadosDigitados2">
+            <label htmlFor="inptGenero" className='title-inpt'>Gênero</label>
+            <input className='inputs' type="number" 
             id='inptGenero'
             value={genero}
             onChange={(event) => setGenero(event.target.value)}
             />
-    
         </div>
 
+      </div>
+    
+      <div className="div-btns">
         <button className='btn710Page' onClick={adicionarDados}>Adicionar dados</button>
-        <button onClick={calcularDados}>calculcular dados</button>
+        <button className='btn710Page' onClick={calcularDados}>calculcular dados</button>
+      </div>
 
         {relatorio}
 

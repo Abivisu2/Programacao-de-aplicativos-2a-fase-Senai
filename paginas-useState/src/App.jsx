@@ -17,7 +17,7 @@ function App() {
   return (
     <>
 
-     <ExercicioManoJuca/>
+     {/* <ExercicioManoJuca/> */}
 
     {/* <nav className='container-nav'>
 
@@ -37,8 +37,8 @@ function App() {
 
       </nav>
 
-     {PaginaInicial} */}
-     
+     {PaginaInicial}
+      */}
 
     </>
   )

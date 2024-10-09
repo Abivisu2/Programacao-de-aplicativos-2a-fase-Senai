@@ -1,0 +1,78 @@
+
+.div-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+  
+}
+
+.title-page{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: mediumseagreen;
+}
+
+.inpts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.dadosDigitados{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.dadosDigitados2{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.title-inpt{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: 600;
+   font-size: 25px;
+   color: blueviolet;
+}
+
+.inputs{
+    height: 25px;
+    width: 80px;
+    border-radius: 10px;
+    border: solid;
+    background-color: white;
+    padding-left: 60px;
+}
+
+.div-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn710Page{
+    width: 170px;
+    height: 50px;
+    color: blueviolet;
+    background-color: mediumseagreen;
+    border: none;
+    
+}
+
+.btn710Page:hover{
+    width: 180px;
+    height: 55px;
+    cursor: pointer;
+    background-color: rgb(136, 212, 149);
+    transition: 0.15s;
+    
+}

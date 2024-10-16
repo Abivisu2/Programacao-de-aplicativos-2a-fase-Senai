@@ -34,7 +34,7 @@ let alturaDigitada = Number(altura)
 let generoDigitado = Number(genero)
 
 
-if(listaDados.length < 2){
+if(listaDados.length < 10){
   setListaDados([...listaDados , {altura: alturaDigitada , genero: generoDigitado}])
 
   setAltura('')

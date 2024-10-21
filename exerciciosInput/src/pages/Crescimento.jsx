@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Crescimento.css'
+import ResultadoCrescimento from '../components/ResultadoCrescimento'
 
 function Crescimento() {
 
@@ -19,17 +20,24 @@ function Crescimento() {
     let valorDois = Number(alturaDois)
     let primeiroNome = nomeUm
     let segundoNome = nomeDois
+// if(valorUm === "" || valorDois === "" || primeiroNome === "" || segundoNome === ""){
+//       setResultado("Dados incompletos!")
+// }else{}
 
- while(valorDois <= valorUm){
-
+  while(valorDois <= valorUm){
+ 
     valorUm += 0.02
     valorDois += 0.03
     cont++
-  }
+ 
+   }
+
 
   setNomeUm(primeiroNome)
   setNomeDois(segundoNome)
-  setResultado(`${segundoNome} será mais alto que ${primeiroNome} em ${cont} anos.`)
+  // setResultado(`${segundoNome} será mais alto que ${primeiroNome} em ${cont} anos.`)
+  setResultado(<ResultadoCrescimento  nomeDois= {segundoNome} nomeUm={primeiroNome} anos={cont++}/>)
+  // Chamar um componente e usando props para o resultado.
 
 }
 

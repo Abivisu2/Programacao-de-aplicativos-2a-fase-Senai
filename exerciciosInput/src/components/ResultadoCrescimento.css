@@ -1,0 +1,25 @@
+
+.imagemEnzo{
+    height: 150px;
+    width: 150px;
+}
+
+.imagemValentina{
+    height: 150px;
+    width: 150px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+
+.dados-digitados{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

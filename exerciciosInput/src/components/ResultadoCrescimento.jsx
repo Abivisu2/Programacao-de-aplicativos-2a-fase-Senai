@@ -9,20 +9,20 @@ function ResultadoCrescimento(props) {
 
         <div className="dados-digitados">
             <div className="imagemUm">
-                <p>{props.nomeDois}</p>
+                <p className='labels'>{props.nomeDois}</p>
                 <img className='imagemEnzo' src="public/images/enzo.avif" alt="Imagem-Enzo"/>
             </div>
             <div className="comparacao">
-                <p>será mais alto que</p>
+                <p className='labels'>será mais alto que</p>
             </div>
             <div className="imagemDois">
-                <p>{props.nomeUm}</p>
+                <p className='labels'>{props.nomeUm}</p>
                 <img className='imagemValentina' src="public/images/valentina.jpg" alt="Imagem-Valentina" />
             </div>
         </div>
 
-        <div className="resultado-anos">
-            <p>Em, {props.anos} anos</p>
+        <div className="div-resultado-anos">
+            <p className='resultado-anos'>Em, {props.anos} anos</p>
         </div>
       
     </div>

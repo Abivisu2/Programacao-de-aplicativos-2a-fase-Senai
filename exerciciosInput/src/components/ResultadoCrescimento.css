@@ -1,11 +1,11 @@
 
 .imagemEnzo{
-    height: 150px;
+    height: 220px;
     width: 150px;
 }
 
 .imagemValentina{
-    height: 150px;
+    height: 200px;
     width: 150px;
 }
 
@@ -14,12 +14,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    
+    flex-direction: column;
+    margin-top: 2rem;
+
 }
 
 .dados-digitados{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+}
+
+.labels{
+    font-size: 25px;
+}
+
+.div-resultado-anos{
+    margin-top: 2rem;
+    width: 250px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+.resultado-anos{
+    font-size: 30px;
+    font-family: fantasy;
+    font-weight: 600;
+    background-color: aquamarine;
+    color: black;
 }
